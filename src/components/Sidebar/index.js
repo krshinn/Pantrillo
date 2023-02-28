@@ -1,13 +1,13 @@
 import React from 'react'
-import { SidebarContainer, 
-		Icon, 
-		CloseIcon, 
+import { SidebarContainer,
+		Icon,
+		CloseIcon,
 		SidebarWrapper,
 		SidebarMenu,
 		SidebarLink,
 		SideBtnWrap,
-		SidebarRoute 
-} from './SidebarElements'  
+		SidebarRoute
+} from './SidebarElements'
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -17,7 +17,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 		</Icon>
 		<SidebarWrapper>
 			<SidebarMenu>
-			   
+
 				<SidebarLink to="about">About</SidebarLink>
 				<SidebarLink to="mealplanner">Meal Planner</SidebarLink>
 				<SidebarLink to="signup">Sign Up</SidebarLink>

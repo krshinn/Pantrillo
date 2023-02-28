@@ -1,5 +1,3 @@
-# Pantrillo
-Pantrillo / easy and accessible cooking recipes
+# Getting Started with Create React App
 
-This app will be used by individuals who want to save time and cook with what they currently have in their pantry.
-
+Pantrillo - The Meal Builder and Recipe Finder

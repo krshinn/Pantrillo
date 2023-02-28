@@ -6,7 +6,7 @@ import Popular from '../components/Popular'
 import Welcome from './Welcome'
 import FoodJoke from '../components/FoodJoke'
 
-const Home = () => {
+const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => {
@@ -18,12 +18,9 @@ const Home = () => {
 	<>
 		<Sidebar isOpen={isOpen} toggle={toggle}/>
 		<Navbar toggle={toggle}/>
-		<Popular />
-		<Welcome />
-		<FoodJoke />
 
 	</>
   )
 }
 
-export default Home
+export default Nav

@@ -17,7 +17,7 @@ export const SidebarContainer = styled.aside`
 	transition: 0.3s ease-in-out;
 	opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
 	top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
-	
+
 	`
 
 export const CloseIcon = styled(FaTimes)`
@@ -50,7 +50,7 @@ export const SidebarMenu = styled.ul`
 `
 
 export const SidebarLink = styled(LinkScroll)`
-	display: flex; 
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 1.5rem;

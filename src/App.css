@@ -1,8 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Nunito+Sans&display=swap');
+
 *, html, body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Encode Sans Expanded', sans-serif;
-	
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	scroll-behavior: smooth;
+  margin: 0;
+}
+
+
+  /* welcome CSS */
+
+.welc-hero{
+	height: 40rem;
+  width: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url("/src/img/kitchen.jpeg") no-repeat center;
+}
+.welc-hero h1 {
+	text-align: center;
+	font-weight: 900;
+	font-size: 90px;
+	display: block;
+  color: #F98E04;
+}
+
+.welcome-btn {
+	background-color: #038ED7;
+	color: white;
+	width: 180px;
+	cursor: pointer;
+	border-radius: 8px;
+	text-decoration: none;
+	padding: .2rem 2.5rem;
+	margin: 1rem;
+	font-size: 1.25rem;
+	cursor: pointer;
+ }
+.welcome-btn:hover {
+  cursor: pointer;
+  background-color: #0068a9;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+ .row {
+	  display: flex;
+	  flex-direction: row;
+ }
+
+  #about {
+	background-color: #038ED7;
+	color: white;
+	margin: auto;
+	width: 50%;
+	text-align: justify;
+	padding: 40px;
+	padding: 3rem 2rem;
+	border: 1px solid;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	font-size: 1.25rem;
+}
+	#about h2 {
+		font-size: 3rem;
+		padding: 0 1rem 2rem;
+}
+
+ #bio {
+   border-bottom: 1px solid black;
+   border-top: 1px solid black;
+   letter-spacing: 2px;
+   color: #3669C9;
+   background-color: lavender;
+   /* display: flex; */
+   /* justify-content: center; */
+   column-gap: 60px;
+   padding: 2rem 0;
+   margin: 5rem 0;
+   display: grid;
+   flex-direction: row;
+ }
+ #biggercont {
+   display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+
+ .name {
+   /* position: relative; */
+   justify-content: space-evenly;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .isabelle, .karl, .pierce {
+   width: 80px;
+   height: 90px;
+   border-radius: 50%;
+ }
+
+.para {
+  font-size: 13px;
+  color: #F98E04;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  text-indent: 50px;
+  display: block;
+}
+  /* joke CSS */
+
+  .joke {
+  	text-indent: 70px;
+  	font-size: 20px;
+  	letter-spacing: 1px;
+  	line-height: 30px;
+  	margin: 20px auto;
+  	max-width: 100%;
+  	color: #F98E04;
+  	padding: 3rem;
+ }
+
+
+ /* footer CSS */
+
+ #footer {
+	color: black;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: .8rem;
+ 	padding: 1rem;
+	margin: 1rem;
+}
+ #footer a {
+ 	color: black;
+	margin: 1rem;
+	text-decoration: none;
+}
+#footer a:hover {
+  cursor: pointer;
+  opacity: .6;
+}
+#footer h4 {
+	padding: 0 0 .5rem;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+   .welc {
+	 flex-direction: column;
+	 align-items: center;
+   }
+ }
+
+ /* Meal Planner CSS */
+
+
+ .App {
+   background: url("/src/img/kitchen.jpeg") no-repeat center;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   /* height: 1400px; */
+ }
+
+ .cont {
+   background-color: white;
+   max-width: 900px;
+   padding: 2rem 2rem 4rem;
+   margin: 2rem;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+ }
+ .cont h1 {
+   margin: 2rem 0 3rem 0;
+ }
+ .cont p {
+   float: none;
+   margin: 0 1.5rem 2rem;
+ }
+ .cont input {
+   margin: 2rem 0 2rem 0;
+ }
+ .cont button {
+   margin: 0 0 4rem;
+ }
+
+ .cal-input {
+   text-align: center;
+   padding: 0.5rem;
+   margin-bottom: 1rem;
+ }
+
+ .meal-button {
+   padding: 0.5rem 1rem;
+   background-color: #038ED7;
+   color: #f3f3f3;
+   border: none;
+   border-radius: 8px;
+   font-size: 1rem;
+ }
+
+ .main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .nutrients ul {
+   display: flex;
+   width: 35rem;
+   justify-content: space-evenly;
+   margin: 2rem 0 1rem 0;
+ }
+
+ #macros {
+   justify-content: space-around;
+   list-style: none;
+   text-align: center;
+ }
+
+ .meals {
+   display: flex;
+   text-align: center;
+   margin: 2rem 0 1rem 0;
+ }
+
+ #mealplanimg {
+   width: 100%;
+   margin-bottom: 1rem;
+ }
+
+ .meal-art {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   padding: 2rem;
+   margin: 0 1rem;
+   max-width: 18rem;
+   border-radius: 8px;
+   box-shadow: 0px 4px 8px 2px rgba(77,77,77,0.15);
+ }
+
+ .instructions {
+   display: inline-block;
+   font-size: 0.9rem;
+   text-align: center;
+   margin-bottom: 1rem;
+ }
+
+ @media only screen and (max-width: 550px) {
+   .meals {
+	 flex-direction: column;
+	 align-items: center;
+   }
+
+   .nutrients ul {
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 width: 100%;
+   }
+ }
+
+
+ /* LogIn CSS */
+
+
+ .body {
+   background: url(./img/kitchen.jpeg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: lightgray;
+   padding: 180px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+
+ .logo {
+   background: url(./img/logo.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100px;
+   height: 100px;
+   margin: auto;
+   border-radius: 50%;
+   border: 2px solid #696969;
+ }
+
+ .container-box {
+   background-color: white;
+   max-width: 550px;
+   padding: 4rem 3rem;
+   border: 2px solid #696969;
+   border-radius: 8px;
+   align-items: center;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+ .col-center {
+   padding: 1rem;
+   text-align: center;
+ }
+
+ #log-in-button, #sign-up-button {
+   background-color: #038ED7;
+   font-size: 1rem;
+   text-align: center;
+   justify-content: center;
+   color: white;
+   margin: .5rem;
+   width: 250px;
+   height: 2.5rem;
+   cursor: pointer;
+   border-radius: 8px;
+ }
+ #guest {
+   background-color: white;
+   font-size: 1rem;
+   text-align: center;
+   justify-content: center;
+   color: black;
+   width: 250px;
+   height: 2.5rem;
+   cursor: pointer;
+   border-radius: 8px;
+   margin: .5rem;
+ }
+ button:hover {
+   background-color: #0068a9;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+ #checkbox {
+   margin: .5rem;
+ }
+
+#email-input, #sign-up-email-input {
+   margin: 2rem 0 0;
+ }
+
+#log-in-modal, #sign-up-modal {
+  color: black;
+  max-width: 400px;
+  padding: 3.6rem 0;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   border: 2px solid #696969;
+   position: relative;
+   background-color: #ededed;
+   opacity: .95;
+   text-align: center;
+   align-items: center;
+   line-height: 1.6;
+   color: black;
+   font-size: 21px;
+   border-radius: 8px;
+ }
+ #log-in-modal h3, #sign-up-modal h3 {
+  font-size: 2rem;
+ }
+
+ #log-in-overlay, #sign-up-overlay {
+   justify-content: center;
+   align-items: center;
+   display: none;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+ }
+
+ #close-modal-su, #close-modal-li {
+   width: 60px;
+   background-color: white;
+   color: black;
+   cursor: pointer;
+   padding: .5rem 1rem;
+   border: none;
+   border-radius: 8px;
+   font-family: "roboto", sans-serif;
+   font-size: 1rem;
+   width: 100px;
+   height: 2.5rem;
+   cursor: pointer;
+   border: 1px solid black;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+ #log-in, #submit {
+   width: 60px;
+   background-color: #038ED7;
+   color: white;
+   cursor: pointer;
+   margin: .75rem 1rem;
+   border-radius: 8px;
+   font-size: 1rem;
+   text-align: center;
+   justify-content: center;
+   width: 100px;
+   height: 2.5rem;
+   cursor: pointer;
+   border: 1px solid black;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+
+ #home-page {
+   width: 100%;
+ }
+
+ #nav-logo {
+   width: 20px;
+ }
+
+ .checked {
+   position: absolute;
+ }
+
+
+  /* mixology */
+ * {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   align-content: center;
+ }
+
+ body {
+   font-family: 'PT Sans', sans-serif;
+   line-height: 1.6;
+   background: lightcyan;
+   font-size: 21px;
+ }
+
+ .mix-btn {
+    padding: 0.3rem .3rem;
+    background-color: #038ED7;
+    color: #f3f3f3;
+    border: none;
+    border-radius: 8px;
+    font-size: .8rem;
   }
-  
+
+ .mix-btn:hover {
+   transition: all .2s ease-in-out;
+   background: #fff;
+   color: #010606;
+ }
+
+ #search-bar {
+   color: #0068a9;
+   margin-right: 10px;
+   width: 150px;
+ }
+
+ .drink, .ingredient, .instructions {
+   padding-top: 50px;
+   color: #0068a9;
+ }
+
+ .ingredient, .category {
+   font-weight: 300;
+ }
+
+ .img {
+   width: 400px;
+   height: 400px;
+   border: 1px solid #0068a9;
+ }
+
+  .contain {
+   background-color: lightcyan;
+   max-width: 900px;
+   padding: 2rem 2rem 4rem;
+   margin: 2rem;
+   border-radius: 8px;
+   align-items: center;
+   text-align: center;
+   }
+   .Appoli{
+     background: url("/src/img/try_out.jpeg") no-repeat center;
+     background-attachment: fixed;
+     display: flex;
+     align-items: center;
+     background-size: cover;
+     opacity: .8;
+     padding: .1rem 10rem 20rem;
+    }
+
+   .cont h1 {
+     margin: 2rem 0 3rem 0;
+   }
+   .cont p {
+     float: none;
+     margin: 0 1.5rem 2rem;
+   }
+   .cont input {
+     margin: 2rem 0 2rem 0;
+   }
+   .cont button {
+     margin: 0 0 4rem;
+   }
+
+ @media only screen and (max-width: 650px) {
+    .mix-hero {
+    flex-direction: column;
+    align-items: center;
+    }
+  }
+
+  .err, .category {
+    color: #F98E04;
+  }
+
+ .instructions {
+   color: #b76389;
+   font-weight: 600;
+ }
+
+  .poison {
+    color: #b76389;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: .2rem 2.5rem;
+    margin: 1rem;
+    font-size: 50px;
+    cursor: pointer;
+  }
