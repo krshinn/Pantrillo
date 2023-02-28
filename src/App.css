@@ -631,8 +631,8 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding: 5rem 0 1rem;
-    top: 5%;
+    padding: 5rem 0;
+    top: 1px;
     left: 21.75%;
     position: fixed;
   }
@@ -640,7 +640,7 @@
     font-size: .75rem;
     color: black;
     max-width: 950px;
-    max-height: 550px;
+    height: 80vh;
     border: 1px solid black;
     border-radius: 8px;
     background-color: white;
