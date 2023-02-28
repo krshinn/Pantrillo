@@ -49,7 +49,6 @@ app.post('/login', (req,res) => {
   } //establish credentials as user obj
 
   async function verifyUser() {
-
     await client.connect()
     const collection = client.db('test_db').collection('users')
     let findUser = await collection.findOne(user)
@@ -76,13 +75,13 @@ app.get('/api', (req,res) => {
   await client.connect()
   const collection = client.db('test_db').collection('test_recipe')
 
-  let findIngredients = await collection.find(
-  { searchedIngredients: { $all: ingredients } } ).toArray()
+  let findRecipe = await collection.findOne(
+  { searchedIngredients: { $all: ingredients } } )
 
   await client.close()
-	if (findIngredients !== null) {
-	  console.log(findIngredients)
-	  res.send(findIngredients)
+	if (findRecipe !== null) {
+	  console.log(findRecipe)
+	  res.send(findRecipe)
 	} else {
 	  console.log('error')
 	  res.sendStatus(400)
@@ -90,11 +89,13 @@ app.get('/api', (req,res) => {
   }
   postRecipe()
 })
-
-
+  
+  
   app.get('*', (req,res)=> {
   res.sendFile(__dirname + "/build/index.html")
 })
+
+
 
 
 app.listen(port)

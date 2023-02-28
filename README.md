@@ -11,4 +11,9 @@ https://spoonacular.com/
 
 ----
 
-We created and maintained a MongoDB database for Pantry recipes.
+We created and maintained a MongoDB database for Pantry recipes.  Recipes are limited in order to deploy a minimal production product for presentation purposes with intention to expand.
+
+Search: Beef/Broccoli
+Search: Carrots/Butter/Honey
+Search: Beef/Potatoes/Olive Oil
+Search: Fish/Scallions/Chili Sauce
