@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Nunito+Sans&display=swap');
 
 *, html, body {
-	font-family: 'Montserrat', sans-serif;
-	line-height: 1.6;
-	scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
   margin: 0;
 }
 
@@ -11,34 +11,34 @@
   /* welcome CSS */
 
 .welc-hero{
-	height: 40rem;
+  height: 40rem;
   width: 100%;
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	background: url("/src/img/kitchen.jpeg") no-repeat center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("/src/img/kitchen.jpeg") no-repeat center;
 }
 .welc-hero h1 {
-	text-align: center;
-	font-weight: 900;
-	font-size: 90px;
-	display: block;
+  text-align: center;
+  font-weight: 900;
+  font-size: 90px;
+  display: block;
   color: #F98E04;
 }
 
 .welcome-btn {
-	background-color: #038ED7;
-	color: white;
-	width: 180px;
-	cursor: pointer;
-	border-radius: 8px;
-	text-decoration: none;
-	padding: .2rem 2.5rem;
-	margin: 1rem;
-	font-size: 1.25rem;
-	cursor: pointer;
+  background-color: #038ED7;
+  color: white;
+  width: 180px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: .2rem 2.5rem;
+  margin: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
  }
 .welcome-btn:hover {
   cursor: pointer;
@@ -47,29 +47,29 @@
  }
 
  .row {
-	  display: flex;
-	  flex-direction: row;
+    display: flex;
+    flex-direction: row;
  }
 
   #about {
-	background-color: #038ED7;
-	color: white;
-	margin: auto;
-	width: 50%;
-	text-align: justify;
-	padding: 40px;
-	padding: 3rem 2rem;
-	border: 1px solid;
-	border-radius: 8px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex-direction: column;
-	font-size: 1.25rem;
+  background-color: #038ED7;
+  color: white;
+  margin: auto;
+  width: 50%;
+  text-align: justify;
+  padding: 40px;
+  padding: 3rem 2rem;
+  border: 1px solid;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 1.25rem;
 }
-	#about h2 {
-		font-size: 3rem;
-		padding: 0 1rem 2rem;
+  #about h2 {
+    font-size: 3rem;
+    padding: 0 1rem 2rem;
 }
 
  #bio {
@@ -117,47 +117,47 @@
   /* joke CSS */
 
   .joke {
-  	text-indent: 70px;
-  	font-size: 20px;
-  	letter-spacing: 1px;
-  	line-height: 30px;
-  	margin: 20px auto;
-  	max-width: 100%;
-  	color: #F98E04;
-  	padding: 3rem;
+    text-indent: 70px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin: 20px auto;
+    max-width: 100%;
+    color: #F98E04;
+    padding: 3rem;
  }
 
 
  /* footer CSS */
 
  #footer {
-	color: black;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	font-size: .8rem;
- 	padding: 1rem;
-	margin: 1rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: .8rem;
+   padding: 1rem;
+  margin: 1rem;
 }
  #footer a {
- 	color: black;
-	margin: 1rem;
-	text-decoration: none;
+   color: black;
+  margin: 1rem;
+  text-decoration: none;
 }
 #footer a:hover {
   cursor: pointer;
   opacity: .6;
 }
 #footer h4 {
-	padding: 0 0 .5rem;
+  padding: 0 0 .5rem;
 }
 
 
 
 @media only screen and (max-width: 650px) {
    .welc {
-	 flex-direction: column;
-	 align-items: center;
+   flex-direction: column;
+   align-items: center;
    }
  }
 
@@ -262,15 +262,15 @@
 
  @media only screen and (max-width: 550px) {
    .meals {
-	 flex-direction: column;
-	 align-items: center;
+   flex-direction: column;
+   align-items: center;
    }
 
    .nutrients ul {
-	 display: flex;
-	 flex-direction: column;
-	 align-items: center;
-	 width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
    }
  }
 
@@ -488,14 +488,15 @@
   .contain {
    background-color: lightcyan;
    max-width: 900px;
-   padding: 2rem 2rem 4rem;
-   margin: 2rem;
+   padding: 2rem 2rem 3rem;
+   margin: 4rem auto 0;
    border-radius: 8px;
    align-items: center;
    text-align: center;
    }
+
    .Appoli{
-     background: url("/src/img/try_out.jpeg") no-repeat center;
+     background: url("https://raw.githubusercontent.com/Pantrillo/Pantrillo/main/src/img/try_out.jpeg") no-repeat center;
      background-attachment: fixed;
      display: flex;
      align-items: center;
@@ -544,3 +545,194 @@
     font-size: 50px;
     cursor: pointer;
   }
+  
+  
+  
+  /* PANTRY CSS */
+  
+  .pantry {
+    background: url("/src/img/pantry1.jpeg") no-repeat center;
+    background-attachment: fixed;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .pantry-wrapper{
+    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 1rem;
+    /* max-width: 600px; */
+  }
+  
+  .pantry-cont {
+    background-color: rgb(235, 235, 235);
+    flex: 0 0 calc(100vw / 4);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    max-height: 150px;
+    border: 1px solid black;
+    border-radius: 8px;
+    justify-content: center;
+    box-shadow: 0px 4px 8px 2px rgba(77,77,77,0.15);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .pantry-cont h1{
+    color: orange;
+    font-size: 2rem;
+    padding: 2.5rem;
+  }
+  .pantry-cont img{
+    max-width: 80px;
+    max-height: 80px;
+    display: flex;
+    margin: 0px 5px 3px;
+    padding: 1px 0 5px;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .pantry-cont input[type="checkbox"] {
+    -webkit-appearance: none;
+    display: block;
+    margin: auto;
+    position:absolute;
+    top: 5%;
+    right: 0;
+    max-width: 5px;
+    cursor: pointer;
+    color: #038ED7;
+  }
+  .pantry-cont input[type="checkbox"]:after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f111";
+    font-size: 18px;
+    color: #038ED7;
+    opacity: .8;
+    right: 10px;
+    top:-5px;
+  }
+  .pantry-cont input[type="checkbox"]:checked:after {
+    font-weight: 900;
+    content: "\f058";
+    color: #038ED7;
+    opacity: .8;
+  }
+  
+  #recipe-overlay {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5rem 0 1rem;
+    top: 0;
+    left: 17.5%;
+    position: fixed;
+  }
+  #recipe-modal {
+    font-size: .75rem;
+    color: black;
+    max-width: 950px;
+    max-height: 550px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    padding: 0 0 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #close-recipe-modal {
+    background-color: #038ED7;
+    color: #f3f3f3;
+    border: none;
+    max-width: 250px;
+    border-radius: 8px; 
+    cursor: pointer;
+    padding: .5rem 1rem;
+  }
+  
+  .food-disp {
+    padding: 3rem;
+  }
+  .food-disp h2 {
+    padding: 0 0 1rem;
+  }
+  
+  .pantry-btn {
+    padding: 0.5rem 1rem;
+    background-color: #038ED7;
+    color: #f3f3f3;
+    border: none;
+    border-radius: 8px; 
+    font-family: "roboto", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .pantry-btn:hover {
+   transition: all .2s ease-in-out;
+   background: #fff;
+   color: #010606;
+   border: 1px solid black;
+  }
+  
+  .recipe-cont{
+    display: inline-grid;
+    padding: 1rem;
+    justify-content: center;
+  }
+  
+  .recipe-head{
+    padding: 1rem 0 2rem;
+  }
+  
+  .recipe-prep{
+    text-align: left;
+    display: inline flex;
+    align-items: center;
+    padding: 1rem;
+  }
+  #title{
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  #imgSrc{
+    border-radius: 8px;
+    padding: 0 0 1rem;
+  }
+  
+  #prep {
+    text-align: left;
+    line-height: 1.2;
+    padding: .5rem;
+  }
+  #pantry-ingredients {
+    text-align: left;
+    padding: .5rem;
+  }
+  
+  
+  @media screen and (min-width: 950px) {
+    .pantry-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      /* padding: 1rem; */
+      
+    }
+  .pantry-cont {
+    align-items: center;
+    height: 300px;
+    width: 300px;
+  }
+  .pantry-cont input[type="checkbox"]:after {
+      font-size: 22px;
+      opacity: .8;
+    }
+  }
+

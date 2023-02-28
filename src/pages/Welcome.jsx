@@ -1,4 +1,4 @@
-import Nav from '../pages/index.js';
+import Nav from '../pages/index.jsx';
 import FoodJoke from '../components/FoodJoke';
 import Footer from '../components/Footer/Footer.jsx';
 import isabelle from '../img/isabelle.png'

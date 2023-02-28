@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Footer from '../components/Footer/Footer.jsx';
-import Nav from '../pages/index.js';
+import Nav from '../pages/index.jsx';
 
 function Mixology() {
 	  const [cocktails, setCocktails] = useState([])

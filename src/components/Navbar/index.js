@@ -30,6 +30,13 @@ const Navbar = ({ toggle }) => {
 					</NavItem>
 
 					<NavItem>
+						<NavLinks to='/Pantry'>
+							Pantry
+						</NavLinks>
+
+					</NavItem>
+
+					<NavItem>
 						<NavLinks to='/MealPlanner'>
 							Meal Planner
 						</NavLinks>
