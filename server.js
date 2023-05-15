@@ -4,7 +4,7 @@ const port = 5005;  //using designated port number on front end to access back e
 // run server on specific port(5001), and the front end/index on port(3000), when ready to merge and run them together - consolidate with Canon
 
 const {MongoClient} = require('mongodb')  //create a new mongoDB client
-const url = "mongodb+srv://krshinn:pickspicks@cluster0.oam60.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const url = "mongodb+srv://krshinn:Iflylikewi$4A@cluster0.oam60.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 const client = new MongoClient(url)
 
 
