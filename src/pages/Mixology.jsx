@@ -32,7 +32,7 @@ function Mixology() {
 				<div className = "Appoli">
 			<div className= "contain">
 		<h1 className = "poison"> Learn a new drink 🍹 </h1>
-		   <input id = "search-bar"/>
+		   <input id = "search-bar" placeholder = "wine, tonic, etc..." />
 		   <button className = "mix-btn" onClick = {Search}> Search . . . </button>
 		   <div id = "err"> </div>
 			 {cocktails.map((drink) => {
