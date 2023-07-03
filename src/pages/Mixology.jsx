@@ -45,7 +45,7 @@ function Mixology() {
 			<img className = "img" src = {strDrinkThumb} alt = {strDrink} />
 			<h5 className = "category"> {strCategory} </h5>
 			<h3 className = "drinkIngredient"> {ingredient} </h3>
-			<p className = "instructions"> {strInstructions} </p>
+			<p className = "drinkInstructions"> {strInstructions} </p>
 		  </div>
 		)
 	  })}
