@@ -470,12 +470,12 @@
    width: 150px;
  }
 
- .drink, .ingredient, .instructions {
+ .drink, .drinkIngredient, .instructions {
    padding-top: 50px;
    color: #0068a9;
  }
 
- .ingredient, .category {
+ .drinkIngredient, .category {
    font-weight: 300;
  }
 
@@ -502,7 +502,7 @@
      align-items: center;
      background-size: cover;
      opacity: .8;
-     padding: .1rem 10rem 20rem;
+     padding: .1rem 10rem 10rem;
     }
 
    .cont h1 {
