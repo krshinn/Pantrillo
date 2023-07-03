@@ -470,7 +470,7 @@
    width: 150px;
  }
 
- .drink, .drinkIngredient, .instructions {
+ .drink, .drinkIngredient, .drinkInstructions {
    padding-top: 50px;
    color: #0068a9;
  }
