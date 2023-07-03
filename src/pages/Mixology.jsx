@@ -31,8 +31,8 @@ function Mixology() {
 		<Nav />
 				<div className = "Appoli">
 			<div className= "contain">
-		<h1 className = "poison"> Select your poison 🍹 </h1>
-		   <input id = "search-bar" />
+		<h1 className = "poison"> Learn a new drink 🍹 </h1>
+		   <input id = "search-bar"> Wine, tonic, etc... </input>
 		   <button className = "mix-btn" onClick = {Search}> Search . . . </button>
 		   <div id = "err"> </div>
 			 {cocktails.map((drink) => {
@@ -44,7 +44,7 @@ function Mixology() {
 			<h2 className = "drink"> {strDrink} </h2>
 			<img className = "img" src = {strDrinkThumb} alt = {strDrink} />
 			<h5 className = "category"> {strCategory} </h5>
-			<h3 className = "ingredient"> {ingredient} </h3>
+			<h3 className = "drinkIngredient"> {ingredient} </h3>
 			<p className = "instructions"> {strInstructions} </p>
 		  </div>
 		)
