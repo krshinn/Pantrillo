@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import Nav from '../pages/index.jsx';
-import FoodDisplay from "./FoodDisplay";
+import Nav from './index.jsx';
+import FoodDisplay from "./FoodDisplay.jsx";
 
 function Pantry() {
   

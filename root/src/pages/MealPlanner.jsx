@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Nav from './index.jsx';
-import MealList from "./MealList";
+import MealList from "./MealList.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 
 function MealPlanner() {

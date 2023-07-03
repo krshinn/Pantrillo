@@ -1,5 +1,5 @@
-import Nav from '../pages/index.jsx';
-import FoodJoke from '../components/FoodJoke';
+import Nav from './index.jsx';
+import FoodJoke from '../components/FoodJoke.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 import isabelle from '../img/isabelle.png'
 import karl from '../img/karl.jpeg'
